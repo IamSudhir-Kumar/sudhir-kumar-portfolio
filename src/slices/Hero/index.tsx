@@ -1,6 +1,7 @@
-"use client"
-import {  useEffect, useRef } from "react";
+"use client";
+import { useEffect, useRef } from "react";
 import Bounded from "../../components/Bounded";
+import Shapes from "./Shapes";
 import { Content, KeyTextField } from "@prismicio/client";
 import { SliceComponentProps } from "@prismicio/react";
 import { gsap } from "gsap";
@@ -17,45 +18,50 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
 
   useEffect(() => {
     let ctx = gsap.context(() => {
-      const tl = gsap.timeline()
+      const tl = gsap.timeline();
 
-      tl.fromTo(".name-animation", {
-        x: -100,
-        opacity: 0,
-        rotate: -10,
-      },
-      {
-        x:0,
-        opacity: 1,
-        rotate:0,
-        ease: "elastic.out(1, 0.3)",
-        duration: 1,
-        delay: 0.5,
-        transformOrigin: "50% 50%",
-        stagger: {
-          each: 0.1,
-          from: "random"
+      tl.fromTo(
+        ".name-animation",
+        {
+          x: -100,
+          opacity: 0,
+          rotate: -10,
+        },
+        {
+          x: 0,
+          opacity: 1,
+          rotate: 0,
+          ease: "elastic.out(1, 0.3)",
+          duration: 1,
+          delay: 0.5,
+          transformOrigin: "50% 50%",
+          stagger: {
+            each: 0.1,
+            from: "random",
+          },
         }
-      }
       );
 
-      tl.fromTo(".job-tittle", {
-        y:20,
-        opacity: 0,
-        scale:1.2, 
-    }, {
-        y:0,
-        opacity: 1,
-        scale:1,
-        ease: "elastic.out(1, 0.3)",
-        duration: 1,
-        transformOrigin: "50% 50%",
-    });
-  }, component);
-    
-  return () => ctx.revert();
-  }, []);
+      tl.fromTo(
+        ".job-tittle",
+        {
+          y: 20,
+          opacity: 0,
+          scale: 1.2,
+        },
+        {
+          y: 0,
+          opacity: 1,
+          scale: 1,
+          ease: "elastic.out(1, 0.3)",
+          duration: 1,
+          transformOrigin: "50% 50%",
+        }
+      );
+    }, component);
 
+    return () => ctx.revert();
+  }, []);
 
   const renderLetters = (name: KeyTextField, key: string) => {
     if (!name) return;
@@ -76,6 +82,7 @@ const Hero = ({ slice }: HeroProps): JSX.Element => {
       ref={component}
     >
       <div className="grid min-h-[70vh] grid-cols-1 md:grid-cols-2 items-center">
+        <Shapes />
         <div className="col-start-1 md:row-start-1">
           {/* <h1
             className="mb-8 lg:text-[clamp(3rem,20vmin,20rem)] 
