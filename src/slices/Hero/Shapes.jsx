@@ -22,7 +22,7 @@ export default function Shapes() {
                         blur={1}
                         far={9}
                     />
-                    <Environment preset="studio" />
+                    <Environment preset="sunset" />
                 </Suspense>
             </Canvas>
         </div>
@@ -59,11 +59,11 @@ function Geometries() {
         
     ];
     const materials = [
-        new THREE.MeshStandardMaterial({ color: 0x27ae60, roughness: 0.1, metalness: 0.1 }),
-        new THREE.MeshStandardMaterial({ color: 0x2980b9, roughness: 0.4, metalness: 0.1 }),
-        new THREE.MeshStandardMaterial({ color: 0x8e44ad, roughness: 0.1, metalness: 0.1 }),
-        new THREE.MeshStandardMaterial({ color: 0xe67e22, roughness: 0.1, metalness: 0.1 }),
-        new THREE.MeshStandardMaterial({ color: 0xc0392b, roughness: 0.1, metalness: 0.1 }),
+        new THREE.MeshStandardMaterial({ color: 0x27ae60, roughness: 0.1,  }),
+        new THREE.MeshStandardMaterial({ color: 0x2980b9, roughness: 0.4,  }),
+        new THREE.MeshStandardMaterial({ color: 0x8e44ad, roughness: 0.1,  }),
+        new THREE.MeshStandardMaterial({ color: 0xe67e22, roughness: 0.1,  }),
+        new THREE.MeshStandardMaterial({ color: 0xc0392b, roughness: 0.1,  }),
     ]
 
     const sound =[
