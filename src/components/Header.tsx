@@ -9,7 +9,7 @@ export default async function Header() {
   return (
     <header
       className="
-  top-0
+    top-0
     z-50
     mx-auto
     max-w-7xl
