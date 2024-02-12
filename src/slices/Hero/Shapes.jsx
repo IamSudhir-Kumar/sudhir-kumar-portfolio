@@ -22,7 +22,7 @@ export default function Shapes() {
                         blur={1}
                         far={9}
                     />
-                    <Environment preset="sunset" />
+                    <Environment preset="warehouse" />
                 </Suspense>
             </Canvas>
         </div>
