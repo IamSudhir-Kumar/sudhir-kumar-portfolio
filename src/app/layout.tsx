@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Urbanist } from "next/font/google";
 import "./globals.css";
-
+import Header from "@/components/Header";
 const inter = Urbanist({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -15,8 +15,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="bg-[#12372A]">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" className="bg-[#12372A] text-[#f7c291]">
+      <body className={inter.className}>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
