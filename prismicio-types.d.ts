@@ -434,6 +434,17 @@ interface SettingsDocumentData {
    * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
    */
   linkedin: prismic.LinkField;
+
+  /**
+   * Instagram field in *Settings*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: settings.instagram
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  instagram: prismic.LinkField;
 }
 
 /**

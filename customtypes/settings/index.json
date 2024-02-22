@@ -75,6 +75,14 @@
           "placeholder": "",
           "select": null
         }
+      },
+      "instagram": {
+        "type": "Link",
+        "config": {
+          "label": "Instagram",
+          "placeholder": "",
+          "select": null
+        }
       }
     }
   }
