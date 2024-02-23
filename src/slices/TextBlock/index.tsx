@@ -3,7 +3,6 @@ import {
   PrismicRichText,
   SliceComponentProps,
 } from "@prismicio/react";
-import Links from "../Links";
 
 /**
  * Props for `TextBlock`.
@@ -17,7 +16,6 @@ const TextBlock = ({ slice }: TextBlockProps): JSX.Element => {
   return (
     <div className="max-w-prose">
       <PrismicRichText field={slice.primary.text} />
-      <Links slices={[slice]} /> // Fix: Pass the slice as an array
     </div>
   );
 };

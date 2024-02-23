@@ -1,0 +1,27 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"project_link": {
+				"__TYPE__": "LinkContent",
+				"value": {
+					"__TYPE__": "ExternalLink",
+					"url": "http://google.com"
+				}
+			},
+			"title": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Veniam veniam fugiat mollit esse officia. Ad voluptate culpa ad deserunt dolore anim elit cupidatat do commodo laboris velit ex."
+						}
+					}
+				]
+			}
+		},
+		"items": []
+	}
+]
