@@ -111,9 +111,9 @@ export default function ContentList({
     setCurrentItem(null);
   };
 
-  const contentImages = items.map((item) => {
-    const image = isFilled.image(item.data.image)
-      ? item.data.image
+  const contentImages  = items.map((item) => {
+    const image = isFilled.image(item.data.hover_image)
+      ? item.data.hover_image
       : fallbackItemImage;
     return asImageSrc(image, {
       fit: "crop",
@@ -122,6 +122,7 @@ export default function ContentList({
       exp: -10,
     });
   });
+  
 
   // Preload images
   useEffect(() => {
